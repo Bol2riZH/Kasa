@@ -1,3 +1,7 @@
+import React from 'react';
+
+import './style/main.scss';
+
 const App = () => {
   return (
     <div>
