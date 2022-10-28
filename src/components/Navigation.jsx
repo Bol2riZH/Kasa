@@ -1,14 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import classes from './Navigation.module.scss';
+
 const Navigation = () => {
   return (
-    <ul>
-      <NavLink to="/">
-        <li>Accueil</li>
+    <ul className={classes.layout}>
+      <NavLink
+        to="/"
+        end
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+      >
+        <li>ACCUEIL</li>
       </NavLink>
-      <NavLink to="/about">
-        <li>A Propos</li>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => (isActive ? classes.active : undefined)}
+      >
+        <li>A PROPOS</li>
       </NavLink>
     </ul>
   );

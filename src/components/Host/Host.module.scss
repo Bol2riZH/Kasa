@@ -9,7 +9,7 @@
 
   background: linear-gradient(colors.$primary-color 50%, colors.$shade-color);
   border-radius: variables.$border-radius;
-  > h2 {
+  & h2 {
     margin-left: 2rem;
     margin-bottom: 2rem;
   }

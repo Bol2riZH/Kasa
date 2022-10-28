@@ -1,11 +1,13 @@
 import React from 'react';
 
-import Navigation from '../components/Navigation';
+import classes from './Header.module.scss';
 import logo from '../assets/logo/logo.svg';
+
+import Navigation from '../components/Navigation';
 
 const Header = () => {
   return (
-    <header>
+    <header className={classes.layout}>
       <div>
         <img src={logo} alt="logo" />
       </div>

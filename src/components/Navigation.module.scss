@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  & li {
+    display: flex;
+  }
+  & a {
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
