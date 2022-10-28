@@ -3,8 +3,7 @@ import React from 'react';
 import data from '../api/hosts.json';
 
 import classes from './Home.module.scss';
-
-import Host from '../components/Host/Host';
+import HostCard from '../components/Host/HostCard';
 
 const Home = () => {
   return (
@@ -15,7 +14,7 @@ const Home = () => {
       <ul className={classes.cardLayout}>
         {data.map((host) => (
           <li key={host.id}>
-            <Host {...host} />
+            <HostCard {...host} />
           </li>
         ))}
       </ul>

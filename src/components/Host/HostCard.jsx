@@ -1,9 +1,9 @@
 import React from 'react';
 
-import classes from './Host.module.scss';
+import classes from './HostCard.module.scss';
 import { useNavigate } from 'react-router-dom';
 
-const Host = (props) => {
+const HostCard = (props) => {
   const navigate = useNavigate();
 
   const getHostId = () => {
@@ -17,4 +17,4 @@ const Host = (props) => {
   );
 };
 
-export default Host;
+export default HostCard;
