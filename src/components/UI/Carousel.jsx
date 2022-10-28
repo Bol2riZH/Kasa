@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import classes from './Carousel.module.scss';
+
 const Carousel = (host) => {
   const [picture, setPicture] = useState(0);
 
@@ -16,10 +18,12 @@ const Carousel = (host) => {
   };
 
   return (
-    <div>
-      <button onClick={sliderRight}>Suivante</button>
-      <img src={host.pictures[picture]} alt="host" />
+    <div className={classes.carousel}>
       <button onClick={sliderLeft}>Précédente</button>
+      <li className={classes.img}>
+        <img src={host.pictures[picture]} alt="host" />
+      </li>
+      <button onClick={sliderRight}>Suivante</button>
     </div>
   );
 };
