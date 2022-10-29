@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import data from '../api/hosts.json';
 import Carousel from '../components/UI/Carousel';
+import Tag from '../components/UI/Tag';
+import Rate from '../components/UI/Rate';
 
 import classes from './Host.module.scss';
 
@@ -11,35 +13,33 @@ const Host = () => {
   const host = data.find((host) => host.id === params.id);
 
   return (
-    <div>
+    <section className={classes.main}>
       <ul>
         <Carousel {...host} />
       </ul>
       <header className={classes.header}>
-        <div>
+        <div className={classes.topContainer}>
           <h2>{host.title}</h2>
           <p>{host.location}</p>
-          <ul>
-            {host.tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
-            ))}
-          </ul>
+          <Tag {...host} />
         </div>
-        <div>
-          <p>{host.host.name}</p>
-          <img src={host.host.picture} alt="host person" />
-          <span>{host.rating}</span>
+        <div className={classes.bottomContainer}>
+          <Rate {...host} />
+          <div className={classes.hostInfo}>
+            <p>{host.host.name}</p>
+            <img src={host.host.picture} alt="host person" />
+          </div>
         </div>
       </header>
-      <div>
+      <section>
         <p>{host.description}</p>
         <ul>
           {host.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>
           ))}
         </ul>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 
