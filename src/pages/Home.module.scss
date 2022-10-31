@@ -17,7 +17,6 @@
 .main {
   margin: 0 2rem;
   & .img {
-    height: clamp(10rem, 2vw, 22rem);
     overflow: hidden;
 
     background-image: url('../assets/images/bg-acceuil.jpg');
@@ -28,17 +27,20 @@
 
     margin-bottom: 2rem;
     @include mediaqueries.medium {
-      background-image: url('../assets/images/bg-acceuil-XL.jpg');
-      background-size: 100%;
+      background-image: url('../assets/images/bg-acceuil.jpg');
     }
     & p {
       color: colors.$light-color;
-      font-size: clamp(2.4rem, 2vw, 4.8rem);
+      font-size: clamp(2.4rem, 3vw, 4.8rem);
       font-weight: 500;
 
       background: rgba(0, 0, 0, 0.3);
 
-      padding: 4.1rem;
+      padding: 3rem 1.6rem;
+      @include mediaqueries.medium {
+        text-align: center;
+        padding: clamp(3rem, 4vw, 7.8rem) 0;
+      }
     }
   }
 

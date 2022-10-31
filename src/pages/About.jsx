@@ -5,6 +5,7 @@ import CollapseCard from '../components/CollapseCard';
 
 import classes from './About.module.scss';
 import bgAPropos from '../assets/images/bg-aPropos.jpg';
+import bgAProposXl from '../assets/images/bg-aPropos-XL.jpg';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 
@@ -15,8 +16,12 @@ const About = () => {
         <Header />
         <section className={classes.main}>
           <div className={classes.img}>
-            <img src={bgAPropos} alt="background" />
+            <picture>
+              <source media="(min-width: 992px)" srcSet={bgAProposXl} />
+              <img src={bgAPropos} alt="background" />
+            </picture>
           </div>
+
           <div className={classes.container}>
             <CollapseCard {...data.trust} />
             <CollapseCard {...data.respect} />

@@ -8,12 +8,12 @@
     align-items: center;
     background-color: colors.$primary-color;
     border-radius: variables.$border-radius-tags;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem clamp(1rem, 2vw, 2rem);
     &:hover {
       cursor: pointer;
     }
     & h2 {
-      font-size: 1.3rem;
+      font-size: clamp(1.3rem, 2vw, 2.4rem);
       color: colors.$light-color;
     }
   }
@@ -34,10 +34,10 @@
     bottom: 0.5rem;
     z-index: -1;
 
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2vw, 2.4rem);
     font-weight: 400;
 
-    padding: 2rem 1rem;
+    padding: clamp(2rem, 2vw, 3.6rem) clamp(1rem, 2vw, 1.8rem);
 
     background-color: colors.$grey-color;
     border-radius: variables.$border-radius-tags;

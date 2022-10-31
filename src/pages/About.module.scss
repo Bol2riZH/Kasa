@@ -16,9 +16,13 @@
 .main {
   margin: 0 2rem;
   & .img {
-    margin-bottom: 2rem;
     background: rgba(0, 0, 0, 0.3);
+    border-radius: variables.$border-radius;
     & img {
+      position: relative;
+      z-index: -1;
+
+      margin-bottom: 2rem;
       object-fit: cover;
       width: 100%;
       height: 100%;
