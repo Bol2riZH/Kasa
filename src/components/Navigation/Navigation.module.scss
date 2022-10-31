@@ -5,7 +5,7 @@
     display: flex;
   }
   & a {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2vw, 2.4rem);
     word-wrap: normal;
     &:hover {
       text-decoration: underline;

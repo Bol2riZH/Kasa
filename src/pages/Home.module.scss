@@ -1,16 +1,23 @@
-@use '../style/abstract/variables';
 @use '../style/abstract/colors';
+@use '../style/abstract/variables';
+@use '../style/abstract/mediaqueries';
 
 .content {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  & .contentCenter {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .main {
   margin: 0 2rem;
   & .img {
+    height: clamp(10rem, 2vw, 22rem);
     overflow: hidden;
 
     background-image: url('../assets/images/bg-acceuil.jpg');
@@ -20,9 +27,13 @@
     border-radius: variables.$border-radius;
 
     margin-bottom: 2rem;
+    @include mediaqueries.medium {
+      background-image: url('../assets/images/bg-acceuil-XL.jpg');
+      background-size: 100%;
+    }
     & p {
       color: colors.$light-color;
-      font-size: 2.4rem;
+      font-size: clamp(2.4rem, 2vw, 4.8rem);
       font-weight: 500;
 
       background: rgba(0, 0, 0, 0.3);
@@ -35,5 +46,22 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @include mediaqueries.small {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 2rem;
+
+      background-color: colors.$grey-color;
+      border-radius: variables.$border-radius;
+      padding: 2rem;
+    }
+    @include mediaqueries.large {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 6rem;
+      grid-row-gap: 5rem;
+
+      padding: 5.6rem 5rem;
+    }
   }
 }

@@ -10,7 +10,7 @@ import Footer from '../layout/Footer';
 const Home = () => {
   return (
     <div className={classes.content}>
-      <div>
+      <div className={classes.contentCenter}>
         <Header />
         <section className={classes.main}>
           <div className={classes.img}>

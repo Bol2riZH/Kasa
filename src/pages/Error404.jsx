@@ -14,7 +14,7 @@ const Error404 = () => {
 
   return (
     <div className={classes.content}>
-      <div>
+      <div className={classes.contentCenter}>
         <Header />
         <section className={classes.container}>
           <h2>404</h2>

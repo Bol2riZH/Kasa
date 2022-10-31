@@ -18,7 +18,7 @@ const Host = () => {
 
   return (
     <div className={classes.content}>
-      <div>
+      <div className={classes.contentCenter}>
         <Header />
         <section className={classes.main}>
           <ul>
