@@ -2,9 +2,11 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import data from '../api/hosts.json';
+
 import Carousel from '../components/UI/Carousel';
 import Tag from '../components/UI/Tag';
 import Rate from '../components/UI/Rate';
+import CollapseCard from '../components/UI/CollapseCard';
 
 import classes from './Host.module.scss';
 
@@ -23,21 +25,17 @@ const Host = () => {
           <p>{host.location}</p>
           <Tag {...host} />
         </div>
-        <div className={classes.bottomContainer}>
+        <div className={classes.middleContainer}>
           <Rate {...host} />
           <div className={classes.hostInfo}>
-            <p>{host.host.name}</p>
+            <span>{host.host.name}</span>
             <img src={host.host.picture} alt="host person" />
           </div>
         </div>
       </header>
-      <section>
-        <p>{host.description}</p>
-        <ul>
-          {host.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
+      <section className={classes.bottomContainer}>
+        <CollapseCard>{host.description}</CollapseCard>
+        <CollapseCard>{host.equipments}</CollapseCard>
       </section>
     </section>
   );

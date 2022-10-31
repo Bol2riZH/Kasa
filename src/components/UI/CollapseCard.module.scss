@@ -1,0 +1,43 @@
+@use '../../style/abstract/colors';
+@use '../../style/abstract/variables';
+
+.container {
+  .topContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: colors.$primary-color;
+    border-radius: variables.$border-radius-tags;
+    padding: 0.5rem 1rem;
+    & h2 {
+      font-size: 1.3rem;
+      color: colors.$light-color;
+    }
+  }
+  & img {
+    rotate: 180deg;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  & .rotate {
+    rotate: 0deg;
+  }
+  & ul,
+  p {
+    position: relative;
+    bottom: 0.5rem;
+    z-index: -1;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    padding: 2rem 1rem;
+
+    background-color: colors.$grey-color;
+    border-radius: variables.$border-radius-tags;
+  }
+}
+
+.hidden {
+  display: none;
+}

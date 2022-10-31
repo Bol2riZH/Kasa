@@ -12,13 +12,16 @@
         font-size: 1.4rem;
       }
     }
-    & .bottomContainer {
+    & .middleContainer {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       & .hostInfo {
         display: flex;
+        justify-content: flex-end;
         gap: 1rem;
-        & p {
+        & span {
+          flex: 0.5;
           word-wrap: normal;
           font-size: 1.2rem;
         }
@@ -29,5 +32,10 @@
         }
       }
     }
+  }
+  & .bottomContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

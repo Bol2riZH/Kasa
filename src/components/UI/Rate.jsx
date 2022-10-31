@@ -10,7 +10,7 @@ const Rate = (host) => {
 
   useEffect(() => {
     +host.rating < maxRating && setOutlineStarNumber(maxRating - +host.rating);
-  }, []);
+  }, [host.rating]);
 
   return (
     <div className={classes.rate}>
