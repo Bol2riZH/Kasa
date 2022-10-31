@@ -1,14 +1,14 @@
-@use '../../style/abstract/colors';
-@use '../../style/abstract/variables';
+@use '../style/abstract/colors';
+@use '../style/abstract/variables';
 
 .tag {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   & li {
     font-size: 1rem;
     color: colors.$light-color;
 
-    margin: 1rem 0;
     padding: 0.2rem 3rem;
 
     border-radius: variables.$border-radius-tags;

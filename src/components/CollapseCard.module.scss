@@ -1,5 +1,5 @@
-@use '../../style/abstract/colors';
-@use '../../style/abstract/variables';
+@use '../style/abstract/colors';
+@use '../style/abstract/variables';
 
 .container {
   .topContainer {
@@ -9,6 +9,9 @@
     background-color: colors.$primary-color;
     border-radius: variables.$border-radius-tags;
     padding: 0.5rem 1rem;
+    &:hover {
+      cursor: pointer;
+    }
     & h2 {
       font-size: 1.3rem;
       color: colors.$light-color;
@@ -24,6 +27,9 @@
   }
   & ul,
   p {
+    &.hidden {
+      display: none;
+    }
     position: relative;
     bottom: 0.5rem;
     z-index: -1;
@@ -37,7 +43,6 @@
     border-radius: variables.$border-radius-tags;
   }
 }
-
 .hidden {
   display: none;
 }

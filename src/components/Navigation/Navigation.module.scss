@@ -1,11 +1,12 @@
 .layout {
   display: flex;
-  align-items: center;
   gap: 2rem;
   & li {
     display: flex;
   }
   & a {
+    font-size: 1.2rem;
+    word-wrap: normal;
     &:hover {
       text-decoration: underline;
     }

@@ -1,6 +1,9 @@
 .layout {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   margin: 2rem;
+  & img {
+    height: 4.7rem;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import classes from './Carousel.module.scss';
+import arrow from '../assets/icons/arrow_back_ios-24px 2.svg';
 
 const Carousel = (host) => {
   const [picture, setPicture] = useState(0);
@@ -19,11 +20,27 @@ const Carousel = (host) => {
 
   return (
     <div className={classes.carousel}>
-      <button onClick={sliderLeft}>Précédente</button>
+      <div
+        className={`${classes.arrows} ${
+          host.pictures.length <= 1 && classes.hidden
+        }`}
+      >
+        <img
+          src={arrow}
+          alt="left arrow"
+          onClick={sliderLeft}
+          className={classes.leftArrow}
+        />
+        <img
+          src={arrow}
+          alt="right arrow"
+          onClick={sliderRight}
+          className={classes.rightArrow}
+        />
+      </div>
       <li className={classes.img}>
         <img src={host.pictures[picture]} alt="host" />
       </li>
-      <button onClick={sliderRight}>Suivante</button>
     </div>
   );
 };

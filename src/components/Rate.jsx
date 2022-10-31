@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import classes from './Rate.module.scss';
-import fullStar from '../../assets/icons/fullStar.svg';
-import outlineStar from '../../assets/icons/outlineStar.svg';
+import fullStar from '../assets/icons/fullStar.svg';
+import outlineStar from '../assets/icons/outlineStar.svg';
 
 const Rate = (host) => {
   const [outlineStarNumber, setOutlineStarNumber] = useState();
