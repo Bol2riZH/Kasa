@@ -1,5 +1,10 @@
+@use '../style/abstract/mediaqueries';
+
 .rate {
   display: flex;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: clamp(1.8rem, 2.5vw, 3.6rem);
+  height: clamp(1.8rem, 2.5vw, 3.6rem);
+  @include mediaqueries.medium {
+    justify-content: flex-end;
+  }
 }

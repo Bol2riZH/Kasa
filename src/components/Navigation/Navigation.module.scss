@@ -7,6 +7,7 @@
   & a {
     font-size: clamp(1.2rem, 2vw, 2.4rem);
     word-wrap: normal;
+    margin-left: clamp(0rem, 1vw, 6.7rem);
     &:hover {
       text-decoration: underline;
     }

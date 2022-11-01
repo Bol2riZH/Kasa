@@ -1,40 +1,41 @@
 @use '../style/abstract/colors';
 @use '../style/abstract/variables';
+@use '../style/abstract/mediaqueries';
 
 .container {
-  .topContainer {
+  @include mediaqueries.medium {
+    width: 100%;
+  }
+  & .topContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: colors.$primary-color;
     border-radius: variables.$border-radius-tags;
-    padding: 0.5rem clamp(1rem, 2vw, 2rem);
+    padding: clamp(0.5rem, 1vw, 1.3rem) clamp(1rem, 2vw, 2rem);
     &:hover {
       cursor: pointer;
     }
     & h2 {
-      font-size: clamp(1.3rem, 2vw, 2.4rem);
+      font-size: clamp(1.3rem, 2.2vw, 2.4rem);
       color: colors.$light-color;
     }
   }
   & img {
     rotate: 180deg;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: clamp(1.8rem, 2vw, 3.2rem);
+    height: clamp(1.8rem, 2vw, 3.2rem);
   }
   & .rotate {
     rotate: 0deg;
   }
   & ul,
   p {
-    &.hidden {
-      display: none;
-    }
     position: relative;
     bottom: 0.5rem;
     z-index: -1;
 
-    font-size: clamp(1.2rem, 2vw, 2.4rem);
+    font-size: clamp(1.2rem, 2.2vw, 2.4rem);
     font-weight: 400;
 
     padding: clamp(2rem, 2vw, 3.6rem) clamp(1rem, 2vw, 1.8rem);
@@ -43,6 +44,7 @@
     border-radius: variables.$border-radius-tags;
   }
 }
+
 .hidden {
   display: none;
 }
