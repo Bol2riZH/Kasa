@@ -3,6 +3,7 @@
 @use '../../style/abstract/mediaqueries';
 
 .card {
+  overflow: hidden;
   display: flex;
   align-items: flex-end;
   color: colors.$light-color;
@@ -15,11 +16,17 @@
   background: linear-gradient(colors.$primary-color 50%, colors.$shade-color);
   border-radius: variables.$border-radius;
   & h2 {
+    position: absolute;
     font-size: 1.8rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
   }
   &:hover {
     cursor: pointer;
+  }
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
