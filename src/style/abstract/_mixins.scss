@@ -1,0 +1,3 @@
+@mixin onHover($transition: scale, $timer: 100ms) {
+  transition: $transition $timer ease-in-out;
+}

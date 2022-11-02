@@ -1,8 +1,10 @@
 @use '../style/abstract/colors';
 @use '../style/abstract/variables';
 @use '../style/abstract/mediaqueries';
+@use '../style/abstract/keyframes';
 
 .carousel {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -26,12 +28,12 @@
     & .rightArrow {
       right: 0;
       rotate: -90deg;
-
       &:hover {
         cursor: pointer;
       }
     }
   }
+
   & .img {
     width: 100%;
     > img {
@@ -42,11 +44,17 @@
       border-radius: variables.$border-radius;
     }
   }
+  & .slideRight {
+    animation: carouselRight 150ms linear;
+  }
+  & .slideLeft {
+    animation: carouselLeft 150ms linear;
+  }
   @include mediaqueries.small {
     & span {
       display: block;
-      position: relative;
-      bottom: 5rem;
+      position: absolute;
+      bottom: 1.7rem;
       font-size: 1.8rem;
       color: colors.$light-color;
     }

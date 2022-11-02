@@ -13,7 +13,7 @@ const App = () => {
       <Route path="/" element={<Home title="Kasa - accueil" />} />
       <Route path="/about" element={<About title="Kasa - à propos" />} />
       <Route path="/host/:id" element={<Host title="Kasa - logement" />} />
-      <Route path="*" element={<Error404 title="Erreur 404" />} />
+      <Route path="*" element={<Error404 title="Page introuvable" />} />
     </Routes>
   );
 };

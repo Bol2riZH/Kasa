@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, redirect } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import data from '../api/hosts.json';
 
@@ -16,15 +16,7 @@ import useDocumentTitle from '../hook/useDocumentTitle';
 const Host = ({ title }) => {
   useDocumentTitle(title);
   const params = useParams();
-  const [host, setHost] = useState(data.find((host) => host.id === params.id));
-
-  // const navigate = useNavigate();
-  //
-  // console.log(host.title);
-  //
-  // useEffect(() => {
-  //   !host.title && redirect('/home');
-  // }, [host]);
+  const host = data.find((host) => host.id === params.id);
 
   return (
     <div className={classes.content}>
