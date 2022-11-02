@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/OpenClassrooms_P7_kasa/static/css/main.73a37241.css",
-    "main.js": "/OpenClassrooms_P7_kasa/static/js/main.caa9fa32.js",
-    "static/media/bg-aPropos-XL.jpg": "/OpenClassrooms_P7_kasa/static/media/bg-aPropos-XL.83c76c656bcf9eed1eeb.jpg",
-    "static/media/bg-acceuil.jpg": "/OpenClassrooms_P7_kasa/static/media/bg-acceuil.41e8ae3f47ac3852eefc.jpg",
-    "static/media/bg-aPropos.jpg": "/OpenClassrooms_P7_kasa/static/media/bg-aPropos.ee6d99ddaf5496d8ca7d.jpg",
-    "static/media/logo.svg": "/OpenClassrooms_P7_kasa/static/media/logo.bb1c78bdbf97911cf6044e13e0c4f670.svg",
-    "static/media/logo-white.svg": "/OpenClassrooms_P7_kasa/static/media/logo-white.879b500939b17c84a3f7a1633edae6bf.svg",
-    "index.html": "/OpenClassrooms_P7_kasa/index.html",
-    "static/media/arrow_back_ios-24px 2.svg": "/OpenClassrooms_P7_kasa/static/media/arrow_back_ios-24px 2.e3c21c9e0f4126254823ddb8006e7867.svg",
-    "static/media/fullStar.svg": "/OpenClassrooms_P7_kasa/static/media/fullStar.4949d967956f67c591576c1c58b597ba.svg",
-    "static/media/outlineStar.svg": "/OpenClassrooms_P7_kasa/static/media/outlineStar.ae969662d77c07fdced4114f41bf3e69.svg",
-    "main.73a37241.css.map": "/OpenClassrooms_P7_kasa/static/css/main.73a37241.css.map",
-    "main.caa9fa32.js.map": "/OpenClassrooms_P7_kasa/static/js/main.caa9fa32.js.map"
+    "main.css": "/static/css/main.bad7c36a.css",
+    "main.js": "/static/js/main.e4cbe36d.js",
+    "static/media/bg-aPropos-XL.jpg": "/static/media/bg-aPropos-XL.83c76c656bcf9eed1eeb.jpg",
+    "static/media/bg-acceuil.jpg": "/static/media/bg-acceuil.41e8ae3f47ac3852eefc.jpg",
+    "static/media/bg-aPropos.jpg": "/static/media/bg-aPropos.ee6d99ddaf5496d8ca7d.jpg",
+    "static/media/logo.svg": "/static/media/logo.bb1c78bdbf97911cf6044e13e0c4f670.svg",
+    "static/media/logo-white.svg": "/static/media/logo-white.879b500939b17c84a3f7a1633edae6bf.svg",
+    "index.html": "/index.html",
+    "static/media/arrow_back_ios-24px 2.svg": "/static/media/arrow_back_ios-24px 2.e3c21c9e0f4126254823ddb8006e7867.svg",
+    "static/media/fullStar.svg": "/static/media/fullStar.4949d967956f67c591576c1c58b597ba.svg",
+    "static/media/outlineStar.svg": "/static/media/outlineStar.ae969662d77c07fdced4114f41bf3e69.svg",
+    "main.bad7c36a.css.map": "/static/css/main.bad7c36a.css.map",
+    "main.e4cbe36d.js.map": "/static/js/main.e4cbe36d.js.map"
   },
   "entrypoints": [
-    "static/css/main.73a37241.css",
-    "static/js/main.caa9fa32.js"
+    "static/css/main.bad7c36a.css",
+    "static/js/main.e4cbe36d.js"
   ]
 }
