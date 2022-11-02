@@ -8,8 +8,10 @@ import bgAPropos from '../assets/images/bg-aPropos.jpg';
 import bgAProposXl from '../assets/images/bg-aPropos-XL.jpg';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import useDocumentTitle from '../hook/useDocumentTitle';
 
-const About = () => {
+const About = ({ title }) => {
+  useDocumentTitle(title);
   return (
     <div className={classes.content}>
       <div className={classes.contentCenter}>

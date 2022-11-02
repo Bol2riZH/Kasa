@@ -6,8 +6,10 @@ import classes from './Home.module.scss';
 import HostCard from '../components/UI/HostCard';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import useDocumentTitle from '../hook/useDocumentTitle';
 
-const Home = () => {
+const Home = ({ title }) => {
+  useDocumentTitle(title);
   return (
     <div className={classes.content}>
       <div className={classes.contentCenter}>

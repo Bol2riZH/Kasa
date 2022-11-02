@@ -1,8 +1,12 @@
+@use '../style/abstract/colors';
 @use '../style/abstract/variables';
+@use '../style/abstract/mediaqueries';
 
 .carousel {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   & .arrows {
     position: absolute;
@@ -38,4 +42,16 @@
       border-radius: variables.$border-radius;
     }
   }
+  @include mediaqueries.small {
+    & span {
+      display: block;
+      position: relative;
+      bottom: 5rem;
+      font-size: 1.8rem;
+      color: colors.$light-color;
+    }
+  }
+}
+.hidden {
+  display: none;
 }

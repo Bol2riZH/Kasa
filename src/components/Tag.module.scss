@@ -5,7 +5,13 @@
 .tag {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+
+  @include mediaqueries.medium {
+    flex-wrap: nowrap;
+  }
   & li {
+    white-space: nowrap;
     font-size: clamp(1rem, 2vw, 1.4rem);
     color: colors.$light-color;
 

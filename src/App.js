@@ -10,10 +10,10 @@ import Error404 from './pages/Error404';
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/host/:id" element={<Host />} />
-      <Route path="*" element={<Error404 />} />
+      <Route path="/" element={<Home title="Kasa - accueil" />} />
+      <Route path="/about" element={<About title="Kasa - à propos" />} />
+      <Route path="/host/:id" element={<Host title="Kasa - logement" />} />
+      <Route path="*" element={<Error404 title="Erreur 404" />} />
     </Routes>
   );
 };

@@ -41,6 +41,9 @@ const Carousel = (host) => {
       <li className={classes.img}>
         <img src={host.pictures[picture]} alt="host" />
       </li>
+      <span className={classes.hidden}>{`${picture + 1}/${
+        host.pictures.length
+      }`}</span>
     </div>
   );
 };

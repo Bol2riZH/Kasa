@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate, redirect } from 'react-router-dom';
 
 import data from '../api/hosts.json';
 
@@ -11,10 +11,20 @@ import CollapseCard from '../components/CollapseCard';
 import classes from './Host.module.scss';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import useDocumentTitle from '../hook/useDocumentTitle';
 
-const Host = () => {
+const Host = ({ title }) => {
+  useDocumentTitle(title);
   const params = useParams();
-  const host = data.find((host) => host.id === params.id);
+  const [host, setHost] = useState(data.find((host) => host.id === params.id));
+
+  // const navigate = useNavigate();
+  //
+  // console.log(host.title);
+  //
+  // useEffect(() => {
+  //   !host.title && redirect('/home');
+  // }, [host]);
 
   return (
     <div className={classes.content}>

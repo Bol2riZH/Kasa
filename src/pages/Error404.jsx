@@ -4,8 +4,11 @@ import classes from './Error404.module.scss';
 import { useNavigate } from 'react-router-dom';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import useDocumentTitle from '../hook/useDocumentTitle';
 
-const Error404 = () => {
+const Error404 = ({ title }) => {
+  useDocumentTitle(title);
+
   const navigate = useNavigate();
 
   const goHomeHandler = () => {
