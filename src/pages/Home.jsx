@@ -3,10 +3,11 @@ import React from 'react';
 import data from '../api/hosts.json';
 
 import classes from './Home.module.scss';
-import HostCard from '../components/UI/HostCard';
+
+import useDocumentTitle from '../hook/useDocumentTitle';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import useDocumentTitle from '../hook/useDocumentTitle';
+import HostCard from '../components/UI/HostCard';
 
 const Home = ({ title }) => {
   useDocumentTitle(title);

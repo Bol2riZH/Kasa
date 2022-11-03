@@ -1,10 +1,11 @@
 import React from 'react';
-
-import classes from './Error404.module.scss';
 import { useNavigate } from 'react-router-dom';
+
+import useDocumentTitle from '../hook/useDocumentTitle';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import useDocumentTitle from '../hook/useDocumentTitle';
+
+import classes from './Error404.module.scss';
 
 const Error404 = ({ title }) => {
   useDocumentTitle(title);

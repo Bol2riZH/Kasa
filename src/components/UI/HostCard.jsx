@@ -1,7 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import classes from './HostCard.module.scss';
-import { useNavigate } from 'react-router-dom';
 
 const HostCard = (host) => {
   const navigate = useNavigate();

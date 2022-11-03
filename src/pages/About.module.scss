@@ -1,5 +1,6 @@
 @use '../style/abstract/variables';
 @use '../style/abstract/colors';
+@use '../style/abstract/mediaqueries';
 
 .content {
   height: 100vh;
@@ -14,15 +15,20 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 2rem;
   & .img {
+    width: 100%;
+    margin-bottom: 2rem;
+
     background: rgba(0, 0, 0, 0.3);
     border-radius: variables.$border-radius;
     & img {
       position: relative;
       z-index: -1;
 
-      margin-bottom: 2rem;
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -34,5 +40,9 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
+    @include mediaqueries.medium {
+      width: 80%;
+    }
   }
 }

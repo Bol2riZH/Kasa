@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import data from '../api/hosts.json';
 
+import classes from './Host.module.scss';
+
+import useDocumentTitle from '../hook/useDocumentTitle';
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 import Carousel from '../components/Carousel';
 import Tag from '../components/Tag';
 import Rate from '../components/Rate';
 import CollapseCard from '../components/CollapseCard';
-
-import classes from './Host.module.scss';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
-import useDocumentTitle from '../hook/useDocumentTitle';
 
 const Host = ({ title }) => {
   useDocumentTitle(title);

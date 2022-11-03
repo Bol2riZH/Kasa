@@ -1,14 +1,15 @@
 import React from 'react';
 
 import data from '../api/about.json';
-import CollapseCard from '../components/CollapseCard';
 
 import classes from './About.module.scss';
 import bgAPropos from '../assets/images/bg-aPropos.jpg';
 import bgAProposXl from '../assets/images/bg-aPropos-XL.jpg';
+
+import useDocumentTitle from '../hook/useDocumentTitle';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import useDocumentTitle from '../hook/useDocumentTitle';
+import CollapseCard from '../components/CollapseCard';
 
 const About = ({ title }) => {
   useDocumentTitle(title);
