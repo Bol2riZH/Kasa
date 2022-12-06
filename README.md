@@ -1,16 +1,16 @@
-# PROJECT 7 bis - Kasa
+# Kasa
 
-This repository contains the new version project 7 of OpenClassrooms training.
+## OpenClassrooms Project 7 - renting website (React)
 
-For this project I have to do the integration of a figma maquette with REACT.
+Another step to pass : Learn a framework.
+As always before i went to work on the project, i spend time learning the basics and understand how it works.
 
-**Has always I like my code to be as clean as possible for scalability and maintenance and performance**
+Thanks to this, I have been able to finish this project in 28h.
+
+So here we got a json file (to use like a DB) and a FIGMA design.
+
+**Has always I like my code to be as clean as possible for scalability and maintenance and performance**.
+
+Check it out [here](https://kasa-o6yeg3gdw-bol2rizh.vercel.app/)!
 
 ![img.png](img.png)
-
-## HOW TO USE :
-
-You can access the code by clone / download the zip.
-`npm install` > `npm start`
-
-You can also follow [this link](https://kasa-o6yeg3gdw-bol2rizh.vercel.app/) to get an overview
