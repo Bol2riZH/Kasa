@@ -1,6 +1,6 @@
 # Kasa
 
-## OpenClassrooms Project 7 - renting website (React)
+## OpenClassrooms Project 7 bis - renting website (React)
 
 Another step to pass : Learn a framework.
 As always before i went to work on the project, i spend time learning the basics and understand how it works.
